@@ -1,3 +1,4 @@
+/* General Page Styling */
 body {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -7,6 +8,7 @@ body {
     padding: 20px;
 }
 
+/* Heading Style */
 h1 {
     font-size: 2rem;
     font-weight: 600;
@@ -14,6 +16,7 @@ h1 {
     color: #ff9800;
 }
 
+/* Input Box Styling */
 #input {
     height: 40px;
     width: 280px;
@@ -33,6 +36,7 @@ h1 {
     background-color: #2a2a2a;
 }
 
+/* Button Styling */
 button {
     height: 30px;
     width: 90px;
@@ -52,23 +56,26 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* Container for Results */
 .data {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     padding: 20px 0;
 }
 
+/* Cards wrapper */
 .card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;  
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1200px;        
     width: 100%;
     padding: 0 10px;
 }
 
+/* Each anime card */
 .card li {
     background: #1a1818;
     border-radius: 8px;
@@ -83,4 +90,44 @@ button:hover {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     gap: 15px;
     width: 20rem;
+    text-align: center;
+}
+
+/* Hover effect for card */
+.card li:hover {
+    background: #292929;
+    transform: translateY(-3px);
+}
+
+/* Link styling */
+.card li a {
+    display: block;
+    color: #03a9f4;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 6px;
+}
+
+.card li a:hover {
+    text-decoration: underline;
+}
+
+
+.card li img {
+    width: 150px;
+    border-radius: 6px;
+    border: 2px solid #444;
+    transition: 0.3s;
+}
+
+.card li img:hover {
+    transform: scale(1.05);
+    border-color: #ff9800;
+}
+
+
+@media (max-width: 600px) {
+    .card li {
+        width: 90%;   
+    }
 }
