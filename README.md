@@ -36,9 +36,3 @@ Users can enter an anime name and get information like **title, release year, ra
 [**Click Here to View Project**](https://priyanshikumari197.github.io/anime-search/)
 
 ---
-
-## 🧩 How to Run Locally
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/anime-api-project.git
