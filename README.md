@@ -33,7 +33,7 @@ Users can enter an anime name and get information like **title, release year, ra
 
 ## 🔗 Live Demo
 
-[**Click Here to View Project**](https://your-username.github.io/anime-api-project/)
+[**Click Here to View Project**](https://priyanshikumari197.github.io/anime-search/)
 
 ---
 
