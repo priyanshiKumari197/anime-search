@@ -135,7 +135,7 @@ button:hover {
     }
     body{
         height: 100vh;
-        background-image: url(mobile-back.jpg);
+        background-image: url(mobile.jpg);
         background-size: cover;
     }
 }
