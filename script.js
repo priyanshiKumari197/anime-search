@@ -5,11 +5,13 @@ btn.addEventListener("click", async () => {
     let input = document.querySelector("#input").value;
     let animeDetails = await getAnime(input);
     getAnimeData(animeDetails);
+    document.querySelector("body").style.backgroundColor = "#0f0e0e";
+    document.querySelector("body").style.backgroundImage = "none"
 });
 
 function getAnimeData(animedata) {
     let title = document.querySelector(".card");
-    title.innerHTML = ""; // Clear previous search results
+    title.innerHTML = ""; 
 
     for (const item of animedata) {
         // Elements
@@ -54,7 +56,7 @@ function getAnimeData(animedata) {
 
         // Expand text on dot click
         dot.addEventListener("click", () => {
-            summary.innerText = item.synopsis; // show full text
+            summary.innerText = item.synopsis; 
         });
 
         // Append elements in li
@@ -64,7 +66,6 @@ function getAnimeData(animedata) {
         li.appendChild(summary);
         li.appendChild(url);
 
-        // Append card to container
         title.appendChild(li);
     }
 }

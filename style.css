@@ -6,6 +6,8 @@ body {
     color: #ffffff;
     margin: 0;
     padding: 20px;
+    background-image:url(back.jpg) ;
+    background-size: cover;
 }
 
 /* Heading Style */
@@ -129,5 +131,8 @@ button:hover {
 @media (max-width: 600px) {
     .card li {
         width: 90%;   
+    }
+    body{
+        background-image: url(mobile-back.jpg);
     }
 }
